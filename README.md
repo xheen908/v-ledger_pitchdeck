@@ -1,4 +1,4 @@
-<align="center">
+<p align="center">
   <img src="logo.png" width="200" alt="V-Ledger Logo">
 </p>
 
