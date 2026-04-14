@@ -97,14 +97,9 @@ V-Ledger bietet ein End-to-End-Framework für digitale Produktpässe (DPP). Eind
 
 ### 🏗️ System Architecture
 
-```mermaid
-graph TD
-    A[Brand/User] -- Google Auth --> G[API Gateway]
-    G -- Transaction Sponsorship --> AA[ERC-4337 Smart Account]
-    AA -- Mint/Verify --> BL[Base L2 Blockchain]
-    BL -- Metadata --> IPFS[Encrypted IPFS Storage]
-    H[Physical Tag] -- SUN Token --> AA
-```
+<p align="center">
+  <img src="https://mermaid.ink/img/eyJjb2RlIjogImdyYXBoIFREXG4gICAgQVtCcmFuZC9Vc2VyXSAtLSBHb29nbGUgQXV0aCAtLT4gR1tBUEkgR2F0ZXdheV1cbiAgICBHIC0tIFRyYW5zYWN0aW9uIFNwb25zb3JzaGlwIC0tPiBBQVtFUkMtNDMzNyBTbWFydCBBY2NvdW50XVxuICAgIEFBIC0tIE1pbnQvVmVyaWZ5IC0tPiBCTFtCYXNlIEwyIEJsb2NrY2hhaW5dXG4gICAgQkwgLS0gTWV0YWRhdGEgLS0+IElQRlNbRW5jcnlwdGVkIElQRlMgU3RvcmFnZV1cbiAgICBIW1BoeXNpY2FsIFRhZ10gLS0gU1VOIFRva2VuIC0tPiBBQSIsICJtZXJtYWlkIjogeyJ0aGVtZSI6ICJkZWZhdWx0In0sICJ1cGRhdGVFZGl0b3IiOiBmYWxzZSwgImF1dG9TeW5jIjogdHJ1ZSwgInVwZGF0ZURpYWdyYW0iOiB0cnVlfQ==" alt="Mermaid Diagram" width="100%">
+</p>
 
 </td>
 </tr>
@@ -170,25 +165,16 @@ V-Ledger verbindet alle Stakeholder: Vom Marken-Dashboard über das Händler-Por
 
 ### 📈 1. The Pfand (Deposit) System
 
-```mermaid
-graph TD
-    M[Brand/Mint] -- locks x EURC --> SC[Smart Contract]
-    SC -- associates deposit --> P[Product Passport]
-    C[Customer] -- scans returned item --> R[Recycler/Hub]
-    R -- verifies authentic tag --> SC
-    SC -- releases x EURC --> C
-```
+<p align="center">
+  <img src="https://mermaid.ink/img/eyJjb2RlIjogImdyYXBoIFREXG4gICAgTVtCcmFuZC9NaW50XSAtLSBsb2NrcyB4IEVVUkMgLS0+IFNDW1NtYXJ0IENvbnRyYWN0XVxuICAgIFNDIC0tIGFzc29jaWF0ZXMgZGVwb3NpdCAtLT4gUFtQcm9kdWN0IFBhc3Nwb3J0XVxuICAgIENbQ3VzdG9tZXJdIC0tIHNjYW5zIHJldHVybmVkIGl0ZW0gLS0+IFJbUmVjeWNsZXIvSHViXVxuICAgIFIgLS0gdmVyaWZpZXMgYXV0aGVudGljIHRhZyAtLT4gU0NcbiAgICBTQyAtLSByZWxlYXNlcyB4IEVVUkMgLS0+IEMiLCAibWVybWFpZCI6IHsidGhlbWUiOiAiZGVmYXVsdCJ9LCAidXBkYXRlRWRpdG9yIjogZmFsc2UsICJhdXRvU3luYyI6IHRydWUsICJ1cGRhdGVEaWFncmFtIjogdHJ1ZX0=" alt="Mermaid Diagram" width="100%">
+</p>
 
 ### 💎 2. Secondary Market Royalties
 V-Ledger allows brands to capture a percentage of every resale. When ownership is transferred, the smart contract automatically routes a **Royalty Fee** back to the brand.
 
-```mermaid
-graph LR
-    S[Seller] -- transfers passport --> B[Buyer]
-    B -- pays price --> P[Payment Portal]
-    P -- 95% --> S
-    P -- 5% Royalty --> BR[Original Brand]
-```
+<p align="center">
+  <img src="https://mermaid.ink/img/eyJjb2RlIjogImdyYXBoIExSXG4gICAgU1tTZWxsZXJdIC0tIHRyYW5zZmVycyBwYXNzcG9ydCAtLT4gQltCdXllcl1cbiAgICBCIC0tIHBheXMgcHJpY2UgLS0+IFBbUGF5bWVudCBQb3J0YWxdXG4gICAgUCAtLSA5NSUgLS0+IFNcbiAgICBQIC0tIDUlIFJveWFsdHkgLS0+IEJSW09yaWdpbmFsIEJyYW5kXSIsICJtZXJtYWlkIjogeyJ0aGVtZSI6ICJkZWZhdWx0In0sICJ1cGRhdGVFZGl0b3IiOiBmYWxzZSwgImF1dG9TeW5jIjogdHJ1ZSwgInVwZGF0ZURpYWdyYW0iOiB0cnVlfQ==" alt="Mermaid Diagram" width="100%">
+</p>
 
 ---
 
@@ -262,15 +248,9 @@ Der EU-ESPR-Standard erzwingt die Einführung digitaler Pässe. V-Ledger hebt si
 
 # 🚀 09: Roadmap & Journey
 
-```mermaid
-timeline
-    title V-Ledger: Development Evolution
-    Dec 2024 : The Vision : Digital Product Passport concept started.
-    Jan - June 2025 : Technical Foundation : Built enterprise VPN infrastructure.
-    Q4 2025 : V-Ledger Alpha : First codebase started.
-    April 2026 : Hardware Breakthrough : Secure NFC finalized (NTAG 424 DNA).
-    2026 - 2027 : Scale & Compliance : Full EU ESPR standard readiness.
-```
+<p align="center">
+  <img src="https://mermaid.ink/img/eyJjb2RlIjogInRpbWVsaW5lXG4gICAgdGl0bGUgVi1MZWRnZXI6IERldmVsb3BtZW50IEV2b2x1dGlvblxuICAgIERlYyAyMDI0IDogVGhlIFZpc2lvbiA6IERpZ2l0YWwgUHJvZHVjdCBQYXNzcG9ydCBjb25jZXB0IHN0YXJ0ZWQuXG4gICAgSmFuIC0gSnVuZSAyMDI1IDogVGVjaG5pY2FsIEZvdW5kYXRpb24gOiBCdWlsdCBlbnRlcnByaXNlIFZQTiBpbmZyYXN0cnVjdHVyZS5cbiAgICBRNCAyMDI1IDogVi1MZWRnZXIgQWxwaGEgOiBGaXJzdCBjb2RlYmFzZSBzdGFydGVkLlxuICAgIEFwcmlsIDIwMjYgOiBIYXJkd2FyZSBCcmVha3Rocm91Z2ggOiBTZWN1cmUgTkZDIGZpbmFsaXplZCAoTlRBRyA0MjQgRE5BKS5cbiAgICAyMDI2IC0gMjAyNyA6IFNjYWxlICYgQ29tcGxpYW5jZSA6IEZ1bGwgRVUgRVNQUiBzdGFuZGFyZCByZWFkaW5lc3MuIiwgIm1lcm1haWQiOiB7InRoZW1lIjogImRlZmF1bHQifSwgInVwZGF0ZUVkaXRvciI6IGZhbHNlLCAiYXV0b1N5bmMiOiB0cnVlLCAidXBkYXRlRGlhZ3JhbSI6IHRydWV9" alt="Mermaid Diagram" width="100%">
+</p>
 
 ### 🎯 Key Breakthroughs
 - **The "Missing Link":** V-Ledger software was ready by late 2025, but hardware encryption (NTAG 424 DNA) was the final hurdle.
