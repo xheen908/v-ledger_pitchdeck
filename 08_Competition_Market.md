@@ -1,15 +1,26 @@
 # 📊 08: Competition & Market
 
+<table>
+<tr>
+<td width="60%" valign="top">
+
 ## The Explosive Demand for Transparency
 
 The Digital Product Passport (DPP) market is projected to reach billions in value as the **EU ESPR regulation** affects over 30 product categories.
-
-![Global Market Connectivity](eu-asia.png)
 
 ### 📈 Market Drivers
 - **Regulatory Deadline:** 2026/2027 mandates forced adoption for millions of SKUs.
 - **Consumer Shift:** 70%+ of consumers prioritize brands with verifiable sustainability claims.
 - **Brand Protection:** Global counterfeit market growth drives demand for non-clonable tracking.
+
+</td>
+<td width="40%" valign="top">
+
+![Global Market Connectivity](eu-asia.png)
+
+</td>
+</tr>
+</table>
 
 ### ⚔️ Competitive Positioning
 
