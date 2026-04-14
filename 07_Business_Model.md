@@ -1,38 +1,39 @@
-# 07: Business Model / Geschäftsmodell
+# 💰 07: Business Model
 
-## English
+## Scalable Revenue Streams
 
-### **Scalable Revenue Streams**
-V-Ledger combines SaaS recurring revenue with usage-based growth.
+V-Ledger combines SaaS recurring revenue with usage-based growth, aligning our success with the brand's volume.
+
+### 💳 Subscription Tiers
 
 | Tier | Target | Key Features |
 | :--- | :--- | :--- |
-| **Essential** | Startups | Compliance, basic analytics |
-| **Pro** | SMBs | Custom branding, role management |
-| **Enterprise** | Fortune 500 | API access, private IPFS, SLA |
+| **Essential** | Startups | Compliance, Basic Analytics, Standard Branding |
+| **Pro** | SMBs | Custom UI, Role Management, Advanced Analytics |
+| **Enterprise** | Fortune 500 | API Access, Private IPFS, SLA, Premium Support |
 
-**Revenue Components:**
-1. **SaaS Subscription:** Fixed monthly fee ($299 - $4,999+).
-2. **Minting Fee:** Usage-based fee per created Passport.
-3. **Transaction Fee:** Small % on circular economy payouts.
-
-> [!TIP]
-> Our model scales with the brand's volume, ensuring long-term alignment and high LTV (Lifetime Value).
+### 📈 Revenue Components
+1. **SaaS Subscription:** Fixed monthly platform access fee ($299 - $4,999+).
+2. **Minting Fee:** One-time usage fee for every Digital Product Passport created.
+3. **Hardware Margin:** Small margin on the high-security NTAG 424 DNA chips.
+4. **Transaction Fee:** Small percentage on circular economy (Pfand) payouts.
 
 ---
 
-## Deutsch
+<details>
+<summary>🇩🇪 Geschäftsmodell auf Deutsch anzeigen</summary>
 
 ### **Skalierbare Erlösströme**
 V-Ledger kombiniert wiederkehrende SaaS-Einnahmen mit nutzungsbasiertem Wachstum.
 
 **Preismodell:**
-- **Essential:** Der Einstieg für Compliance ($299/Mo).
-- **Pro:** Für wachsende Marken mit eigenem Branding ($999/Mo).
+- **Essential:** Einstieg für Compliance ($299/Mtl).
+- **Pro:** Für wachsende Marken mit eigenem Branding ($999/Mtl).
 - **Enterprise:** Volle Integration und dedizierter Support (Individuell).
 
-> [!NOTE]
-> Jedes Minting (Erstellung eines Passes) generiert zusätzliche nutzungsbasierte Einnahmen.
+**Umsatztreiber:** Neben Abonnements generiert jedes Minting (Passerstellung) und jede Pfandrückzahlung zusätzliche Transaktionsgebühren.
+
+</details>
 
 ---
-[Previous: 06_Circular_Economy.md](file:///c:/Users/xheen908/1/DPP%20Standart%20Protocol/pitchdeck/06_Circular_Economy.md) | [Next: 08_Competition_Market.md](file:///c:/Users/xheen908/1/DPP%20Standart%20Protocol/pitchdeck/08_Competition_Market.md)
+[<< Previous Slide](06_Circular_Economy.md) | [Back to Overview](README.md) | [Next Slide: 08 Competition & Market >>](08_Competition_Market.md)
