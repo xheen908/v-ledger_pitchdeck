@@ -21,6 +21,12 @@ V-Ledger provides tailored interfaces for every participant in the product lifec
 - **Ownership Verification:** Securely claim ownership and transfer high-value items.
 - **Circular Rewards:** Interact with "Pfand" (Deposit) systems and recycling incentives.
 
+### 🛡️ 4. Compliance & Authority Gateway
+*Interoperability for Regulators*
+- **JSON-LD Export:** Standards-compliant data output for seamless integration with EU surveillance systems.
+- **Customs (Zoll) Interface:** Automated verification at borders to speed up logistics and ensure product legality.
+- **Regulatory Reporting:** Proof of origin and material composition for market oversight bodies.
+
 ---
 
 <details>
@@ -37,6 +43,9 @@ Bestandsverwaltung und mobile Echtheitsprüfung von Rückläufern.
 
 **3. Customer Passport Portal (Kundenportal):**
 Eigentumsnachweis, Produktstory und Teilnahme an Pfandsystemen.
+
+**4. Compliance & Authority Gateway:**
+JSON-LD Schnittstelle für Behörden (z. B. Zoll). Ermöglicht die automatisierte Überprüfung der EU-Konformität und beschleunigt Logistikprozesse durch standardisierten Datenaustausch nach EU-Vorgaben.
 
 </details>
 
