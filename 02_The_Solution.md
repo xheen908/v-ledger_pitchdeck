@@ -1,10 +1,16 @@
 # 🟢 02: The Solution
 
-## V-Ledger: A Trust-as-a-Service Infrastructure
-
-V-Ledger provides an end-to-end framework for creating, managing, and verifying Digital Product Passports (DPP) with unmatched security and ease of use.
-
-![Secure NFC Solution](vledger_secure_nfc_1776131230863.png)
+<table>
+  <tr>
+    <td width="60%" valign="top">
+      <h2>V-Ledger: A Trust-as-a-Service Infrastructure</h2>
+      <p>V-Ledger provides an end-to-end framework for creating, managing, and verifying Digital Product Passports (DPP) with unmatched security and ease of use.</p>
+    </td>
+    <td width="40%" valign="top">
+      <img src="vledger_secure_nfc_1776131230863.png" alt="Secure NFC Solution" width="100%">
+    </td>
+  </tr>
+</table>
 
 ### 🛡️ 1. Secure Digital Identity
 Every physical product is assigned a unique, non-clonable digital twin on the blockchain (**Base L2**), secured by an **NTAG 424 DNA** NFC chip. This creates an unbreakable link between the physical item and its digital records.
