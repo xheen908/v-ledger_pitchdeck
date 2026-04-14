@@ -16,7 +16,8 @@ V-Ledger combines SaaS recurring revenue with usage-based growth, aligning our s
 1. **SaaS Subscription:** Fixed monthly platform access fee ($299 - $4,999+).
 2. **Minting Fee:** One-time usage fee for every Digital Product Passport created.
 3. **Hardware Margin:** Small margin on the high-security NTAG 424 DNA chips.
-4. **Transaction Fee:** Small percentage on circular economy (Pfand) payouts.
+4. **Royalty Commission:** Percentage-based fee on all secondary market transactions (Luxury System).
+5. **Transaction Fee:** Small percentage on circular economy (Pfand) payouts.
 
 ---
 
@@ -31,7 +32,7 @@ V-Ledger kombiniert wiederkehrende SaaS-Einnahmen mit nutzungsbasiertem Wachstum
 - **Pro:** Für wachsende Marken mit eigenem Branding ($999/Mtl).
 - **Enterprise:** Volle Integration und dedizierter Support (Individuell).
 
-**Umsatztreiber:** Neben Abonnements generiert jedes Minting (Passerstellung) und jede Pfandrückzahlung zusätzliche Transaktionsgebühren.
+**Umsatztreiber:** Neben Abonnements generiert jedes Minting (Passerstellung), jede Pfandrückzahlung und jeder Wiederverkauf (Royalty-Anteil) zusätzliche Transaktionsgebühren.
 
 </details>
 

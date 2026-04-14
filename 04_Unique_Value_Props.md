@@ -19,6 +19,9 @@ Sensitive supply chain data is encrypted (AES-256) before being uploaded to IPFS
 ### 🇪🇺 4. Built-in Compliance (ESPR-Ready)
 V-Ledger is built from the ground up to support the mandatory data fields of the **EU Digital Product Passport**, saving brands months of engineering effort.
 
+### 💰 5. Lifecycle Monetization
+Capture value far beyond the first sale. Automated **secondary market royalties** and incentivized recycling create a perpetual revenue stream for the brand.
+
 ---
 
 <details>
@@ -38,6 +41,9 @@ Sensible Lieferkettendaten werden verschlüsselt (AES-256) gespeichert.
 
 **4. Integrierte Compliance (ESPR-Ready):**
 Unterstützt alle obligatorischen Datenfelder des EU-Digital-Produktpasses.
+
+**5. Monetarisierung des Lebenszyklus:**
+Marken verdienen durch automatisierte Royalties an jedem Wiederverkauf auf dem Zweitmarkt mit.
 
 </details>
 

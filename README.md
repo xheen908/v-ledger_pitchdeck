@@ -26,8 +26,8 @@ V-Ledger is an enterprise-grade ecosystem designed to bridge the gap between phy
 | ⚙️ **03** | [Tech Stack](03_Technology_Stack.md) | NFC, L2 Blockchain & ERC-4337 |
 | ✨ **04** | [Value Props](04_Unique_Value_Props.md) | Security, Usability & Standards |
 | 🌐 **05** | [Ecosystem](05_The_Product_Exosystem.md) | Brand Portal & Consumer App |
-| ♻️ **06** | [Circular Economy](06_Circular_Economy.md) | Recycling & Second-hand Markets |
-| 💰 **07** | [Business Model](07_Business_Model.md) | SaaS & Hardware Revenue |
+| ♻️ **06** | [Economy & Incentives](06_Circular_Economy.md) | Deposits & Luxury Asset Royalties |
+| 💰 **07** | [Business Model](07_Business_Model.md) | SaaS & Transactional Revenue |
 | 📊 **08** | [Market](08_Competition_Market.md) | Competitive Landscape |
 | 🚀 **09** | [Roadmap](09_Roadmap.md) | Future Milestones |
 
