@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo1.png" width="500" alt="V-Ledger Logo">
+  <img src="logo1.png" width="1000" alt="V-Ledger Logo">
 </p>
 
 # V-Ledger: The EU-Compliant DPP Infrastructure
