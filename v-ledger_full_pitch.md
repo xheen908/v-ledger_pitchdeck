@@ -166,14 +166,14 @@ V-Ledger verbindet alle Stakeholder: Vom Marken-Dashboard über das Händler-Por
 ### 📈 1. The Pfand (Deposit) System
 
 <p align="center">
-  <img src="https://mermaid.ink/img/eyJjb2RlIjogImdyYXBoIFREXG4gICAgTVtCcmFuZC9NaW50XSAtLSBsb2NrcyB4IEVVUkMgLS0+IFNDW1NtYXJ0IENvbnRyYWN0XVxuICAgIFNDIC0tIGFzc29jaWF0ZXMgZGVwb3NpdCAtLT4gUFtQcm9kdWN0IFBhc3Nwb3J0XVxuICAgIENbQ3VzdG9tZXJdIC0tIHNjYW5zIHJldHVybmVkIGl0ZW0gLS0+IFJbUmVjeWNsZXIvSHViXVxuICAgIFIgLS0gdmVyaWZpZXMgYXV0aGVudGljIHRhZyAtLT4gU0NcbiAgICBTQyAtLSByZWxlYXNlcyB4IEVVUkMgLS0+IEMiLCAibWVybWFpZCI6IHsidGhlbWUiOiAiZGVmYXVsdCJ9LCAidXBkYXRlRWRpdG9yIjogZmFsc2UsICJhdXRvU3luYyI6IHRydWUsICJ1cGRhdGVEaWFncmFtIjogdHJ1ZX0=" alt="Mermaid Diagram" width="100%">
+  <img src="https://mermaid.ink/img/eyJjb2RlIjogImdyYXBoIFREXG4gICAgTVtCcmFuZC9NaW50XSAtLSBsb2NrcyB4IEVVUkMgLS0+IFNDW1NtYXJ0IENvbnRyYWN0XVxuICAgIFNDIC0tIGFzc29jaWF0ZXMgZGVwb3NpdCAtLT4gUFtQcm9kdWN0IFBhc3Nwb3J0XVxuICAgIENbQ3VzdG9tZXJdIC0tIHNjYW5zIHJldHVybmVkIGl0ZW0gLS0+IFJbUmVjeWNsZXIvSHViXVxuICAgIFIgLS0gdmVyaWZpZXMgYXV0aGVudGljIHRhZyAtLT4gU0NcbiAgICBTQyAtLSByZWxlYXNlcyB4IEVVUkMgLS0+IEMiLCAibWVybWFpZCI6IHsidGhlbWUiOiAiZGVmYXVsdCJ9LCAidXBkYXRlRWRpdG9yIjogZmFsc2UsICJhdXRvU3luYyI6IHRydWUsICJ1cGRhdGVEaWFncmFtIjogdHJ1ZX0=" alt="Mermaid Diagram" width="70%">
 </p>
 
 ### 💎 2. Secondary Market Royalties
 V-Ledger allows brands to capture a percentage of every resale. When ownership is transferred, the smart contract automatically routes a **Royalty Fee** back to the brand.
 
 <p align="center">
-  <img src="https://mermaid.ink/img/eyJjb2RlIjogImdyYXBoIExSXG4gICAgU1tTZWxsZXJdIC0tIHRyYW5zZmVycyBwYXNzcG9ydCAtLT4gQltCdXllcl1cbiAgICBCIC0tIHBheXMgcHJpY2UgLS0+IFBbUGF5bWVudCBQb3J0YWxdXG4gICAgUCAtLSA5NSUgLS0+IFNcbiAgICBQIC0tIDUlIFJveWFsdHkgLS0+IEJSW09yaWdpbmFsIEJyYW5kXSIsICJtZXJtYWlkIjogeyJ0aGVtZSI6ICJkZWZhdWx0In0sICJ1cGRhdGVFZGl0b3IiOiBmYWxzZSwgImF1dG9TeW5jIjogdHJ1ZSwgInVwZGF0ZURpYWdyYW0iOiB0cnVlfQ==" alt="Mermaid Diagram" width="100%">
+  <img src="https://mermaid.ink/img/eyJjb2RlIjogImdyYXBoIExSXG4gICAgU1tTZWxsZXJdIC0tIHRyYW5zZmVycyBwYXNzcG9ydCAtLT4gQltCdXllcl1cbiAgICBCIC0tIHBheXMgcHJpY2UgLS0+IFBbUGF5bWVudCBQb3J0YWxdXG4gICAgUCAtLSA5NSUgLS0+IFNcbiAgICBQIC0tIDUlIFJveWFsdHkgLS0+IEJSW09yaWdpbmFsIEJyYW5kXSIsICJtZXJtYWlkIjogeyJ0aGVtZSI6ICJkZWZhdWx0In0sICJ1cGRhdGVFZGl0b3IiOiBmYWxzZSwgImF1dG9TeW5jIjogdHJ1ZSwgInVwZGF0ZURpYWdyYW0iOiB0cnVlfQ==" alt="Mermaid Diagram" width="80%">
 </p>
 
 ---
