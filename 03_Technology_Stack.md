@@ -6,7 +6,6 @@ V-Ledger is built on a **Web2.5** architecture, combining the high security and 
 
 ### 🏗️ System Architecture
 
-![Architecture Diagram](architecture_diagram.png)
 
 ```mermaid
 graph TD
