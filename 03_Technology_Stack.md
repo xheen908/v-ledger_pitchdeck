@@ -4,8 +4,26 @@
 
 V-Ledger is built on a **Web2.5** architecture, combining the high security and decentralization of Web3 with the frictionless user experience of modern SaaS.
 
-### 🏗️ System Architecture
+<table>
+<tr>
+<td width="50%" valign="top">
 
+### 💎 Core Components
+
+1. **Hardware: NTAG 424 DNA (NFC)**
+   - **Anti-cloning:** SUN tokens provide unique cryptographic proofs.
+   - **Security:** Hardened physical security.
+2. **Blockchain: Base (Ethereum L2)**
+   - **Scalability:** Enterprise-grade performance.
+   - **Security:** Inherited from Ethereum.
+3. **Abstraction: ERC-4337**
+   - **Invisible Wallets:** Social login; no seed phrases.
+   - **Gasless UX:** Platform sponsors fees.
+
+</td>
+<td width="50%" valign="top">
+
+### 🏗️ System Architecture
 
 ```mermaid
 graph TD
@@ -16,19 +34,9 @@ graph TD
     H[Physical Tag] -- SUN Token --> AA
 ```
 
-### 💎 Core Components
-
-#### 1. Hardware: NTAG 424 DNA (NFC)
-- **Anti-cloning:** SUN (Secure Unique NFC) tokens provide a unique cryptographic proof for every scan.
-- **Mutual Authentication:** Hardened physical security for industrial and consumer goods.
-
-#### 2. Blockchain: Base (Ethereum L2)
-- **Scalability:** Enterprise-grade performance with minimal latency.
-- **Security:** Leverages the full security of the Ethereum mainnet while keeping costs low.
-
-#### 3. Abstraction: ERC-4337
-- **Invisible Wallets:** Users interact via Social Login; no seed phrases required.
-- **Gasless UX:** Platform sponsors transaction fees, ensuring zero friction for the end-user.
+</td>
+</tr>
+</table>
 
 ---
 
