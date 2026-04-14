@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>v-ledger_full_pitch.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p align="center">
+  <img src="logo1.png" width="800" alt="V-Ledger Logo">
+</p>
+<h1 id="v-ledger">V-Ledger</h1>
+<h2 id="the-eu-compliant-digital-product-passport-dpp-infrastructure">The EU-Compliant Digital Product Passport (DPP) Infrastructure</h2>
+<p><strong>Arndt Christoph Handschuh</strong><br>
+<em>Entwickler &amp; Gründer V-Ledger</em><br>
+📞 <a href="tel:015258986715">015258986715</a> | 🌐 <a href="https://v-ledger.com">v-ledger.com</a> | 📧 <a href="mailto:info@v-ledger.com">info@v-ledger.com</a></p>
+<hr>
+<p><em>Confidentiality Notice: This document contains proprietary information. All rights reserved.</em></p>
+<div style="page-break-after: always;"></div>
+<h1 id="%F0%9F%94%B4-01-the-problem">🔴 01: The Problem</h1>
+<h2 id="the-challenges-of-the-modern-product-lifecycle">The Challenges of the Modern Product Lifecycle</h2>
+<blockquote>
+<p>[!WARNING]
+Traditional methods of product tracking are no longer sufficient to meet modern security and regulatory standards.</p>
+</blockquote>
+<h3 id="1-regulatory-pressure-eu-espr">1. Regulatory Pressure (EU ESPR)</h3>
+<p>Upcoming <strong>EU Ecodesign for Sustainable Products Regulation (ESPR)</strong> mandates a Digital Product Passport for most physical goods by <strong>2026/2027</strong>. Non-compliance risks heavy fines and market access restrictions.</p>
+<h3 id="2-the-counterfeit-epidemic">2. The Counterfeit Epidemic</h3>
+<p>Global trade in counterfeits costs brands billions annually. Traditional QR codes or basic NFC tags are easily cloned, leading to trust erosion and safety risks.</p>
+<h3 id="3-fragmented-lifecycle-data">3. Fragmented Lifecycle Data</h3>
+<p>Once a product is sold, brands lose visibility. Recycling rates remain low because there is no standardized way to verify material composition or incentivize returns.</p>
+<hr>
+<h3 id="die-herausforderungen-des-modernen-produktlebenszyklus-de"><strong>Die Herausforderungen des modernen Produktlebenszyklus (DE)</strong></h3>
+<p>Globale Marken stehen unter zunehmendem Druck von Regulatoren, Konsumenten und Umweltgruppen, Transparenz über ihre Lieferketten zu schaffen.</p>
+<p><strong>1. Regulatorischer Druck:</strong> EU-Ecodesign-Verordnung (ESPR) bis 2026/2027.<br>
+<strong>2. Fälschungsepidemie:</strong> QR-Codes sind leicht zu klonen.<br>
+<strong>3. Fragmentierte Daten:</strong> Fehlende Sichtbarkeit nach dem Verkauf.</p>
+<div style="page-break-after: always;"></div>
+<h1 id="%F0%9F%9F%A2-02-the-solution">🟢 02: The Solution</h1>
+<table>
+  <tr>
+    <td width="60%" valign="top">
+      <h2>V-Ledger: A Trust-as-a-Service Infrastructure</h2>
+      <p>V-Ledger provides an end-to-end framework for creating, managing, and verifying Digital Product Passports (DPP) with unmatched security and ease of use.</p>
+    </td>
+    <td width="40%" valign="top">
+      <img src="vledger_secure_nfc_1776131230863.png" alt="Secure NFC Solution" width="100%">
+    </td>
+  </tr>
+</table>
+<h3 id="%F0%9F%9B%A1%EF%B8%8F-1-secure-digital-identity">🛡️ 1. Secure Digital Identity</h3>
+<p>Every physical product is assigned a unique, non-clonable digital twin on the blockchain (<strong>Base L2</strong>), secured by an <strong>NTAG 424 DNA</strong> NFC chip.</p>
+<h3 id="%F0%9F%93%9C-2-automated-compliance">📜 2. Automated Compliance</h3>
+<p>The V-Ledger protocol automatically generates EU-compliant DPPs, ensuring that all required regulatory data is immutably recorded.</p>
+<h3 id="%E2%99%BB%EF%B8%8F-3-incentivized-circularity">♻️ 3. Incentivized Circularity</h3>
+<p>By integrating a &quot;Pfand&quot; (Deposit) system, V-Ledger creates a financial incentive for customers to return or recycle products.</p>
+<h3 id="%E2%9A%A1-4-frictionless-interaction">⚡ 4. Frictionless Interaction</h3>
+<p>Built with <strong>Account Abstraction (ERC-4337)</strong>, allowing brands and consumers to interact with the blockchain effortlessly.</p>
+<hr>
+<h3 id="v-ledger-trust-as-a-service-infrastruktur-de"><strong>V-Ledger: Trust-as-a-Service Infrastruktur (DE)</strong></h3>
+<p>V-Ledger bietet ein End-to-End-Framework für digitale Produktpässe (DPP). Eindeutige digitale Zwillinge auf der Blockchain (Base L2), gesichert durch NTAG 424 DNA. Account Abstraction sorgt für ein Web2-ähnliches Erlebnis ohne Krypto-Hürden.</p>
+<div style="page-break-after: always;"></div>
+<h1 id="%E2%9A%99%EF%B8%8F-03-technology-stack">⚙️ 03: Technology Stack</h1>
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3 id="%F0%9F%92%8E-core-components">💎 Core Components</h3>
+<ol>
+<li><strong>Hardware: NTAG 424 DNA (NFC)</strong>
+<ul>
+<li><strong>Anti-cloning:</strong> SUN tokens provide unique cryptographic proofs.</li>
+<li><strong>Security:</strong> Hardened physical security.</li>
+</ul>
+</li>
+<li><strong>Blockchain: Base (Ethereum L2)</strong>
+<ul>
+<li><strong>Scalability:</strong> Enterprise-grade performance.</li>
+<li><strong>Security:</strong> Inherited from Ethereum.</li>
+</ul>
+</li>
+<li><strong>Abstraction: ERC-4337</strong>
+<ul>
+<li><strong>Invisible Wallets:</strong> Social login; no seed phrases.</li>
+<li><strong>Gasless UX:</strong> Platform sponsors fees.</li>
+</ul>
+</li>
+</ol>
+</td>
+<td width="50%" valign="top">
+<h3 id="%F0%9F%8F%97%EF%B8%8F-system-architecture">🏗️ System Architecture</h3>
+<p align="center">
+  <img src="https://mermaid.ink/img/eyJjb2RlIjogImdyYXBoIFREXG4gICAgQVtCcmFuZC9Vc2VyXSAtLSBHb29nbGUgQXV0aCAtLT4gR1tBUEkgR2F0ZXdheV1cbiAgICBHIC0tIFRyYW5zYWN0aW9uIFNwb25zb3JzaGlwIC0tPiBBQVtFUkMtNDMzNyBTbWFydCBBY2NvdW50XVxuICAgIEFBIC0tIE1pbnQvVmVyaWZ5IC0tPiBCTFtCYXNlIEwyIEJsb2NrY2hhaW5dXG4gICAgQkwgLS0gTWV0YWRhdGEgLS0+IElQRlNbRW5jcnlwdGVkIElQRlMgU3RvcmFnZV1cbiAgICBIW1BoeXNpY2FsIFRhZ10gLS0gU1VOIFRva2VuIC0tPiBBQSIsICJtZXJtYWlkIjogeyJ0aGVtZSI6ICJkZWZhdWx0In0sICJ1cGRhdGVFZGl0b3IiOiBmYWxzZSwgImF1dG9TeW5jIjogdHJ1ZSwgInVwZGF0ZURpYWdyYW0iOiB0cnVlfQ==" alt="Mermaid Diagram" width="100%">
+</p>
+</td>
+</tr>
+</table>
+<hr>
+<h3 id="technik-details-de"><strong>Technik-Details (DE)</strong></h3>
+<p>V-Ledger basiert auf einer &quot;Web2.5&quot;-Architektur. NTAG 424 DNA bietet Schutz vor Klonen, während Base (L2) für Skalierbarkeit sorgt. ERC-4337 ermöglicht unsichtbare Wallets und gaslose Transaktionen für maximale Usability.</p>
+<div style="page-break-after: always;"></div>
+<h1 id="%E2%9C%A8-04-unique-value-propositions">✨ 04: Unique Value Propositions</h1>
+<h2 id="why-choose-v-ledger">Why Choose V-Ledger?</h2>
+<blockquote>
+<p>[!TIP]
+Our focus is on making the technology &quot;invisible&quot; to the end-user while providing maximum security for the brand.</p>
+</blockquote>
+<h3 id="%F0%9F%8C%9F-1-no-crypto-onboarding-invisible-web3">🌟 1. No-Crypto Onboarding (Invisible Web3)</h3>
+<p>Logins via social accounts and gasless transactions mean <strong>zero learning curve</strong> for brands and customers.</p>
+<h3 id="%F0%9F%94%92-2-anti-counterfeit-hardware-lock">🔒 2. Anti-Counterfeit Hardware Lock</h3>
+<p>NTAG 424 DNA ensures that the digital passport cannot be decoupled from the physical product or copied.</p>
+<h3 id="%F0%9F%95%B5%EF%B8%8F-3-privacy-by-design">🕵️ 3. Privacy by Design</h3>
+<p>Sensitive supply chain data is encrypted (AES-256) before being uploaded to IPFS. Only authorized holders can decrypt product details.</p>
+<h3 id="%F0%9F%92%B0-4-lifecycle-monetization">💰 4. Lifecycle Monetization</h3>
+<p>Automated <strong>secondary market royalties</strong> and incentivized recycling create a perpetual revenue stream.</p>
+<hr>
+<h3 id="alleinstellungsmerkmale-de"><strong>Alleinstellungsmerkmale (DE)</strong></h3>
+<p>V-Ledger bietet Onboarding ohne Krypto-Hürden, echtes Anti-Counterfeit durch Hardware-Bindung und datenschutzkonforme Speicherung (AES-256). Durch automatisierte Royalties verdienen Marken an jedem Wiederverkauf mit.</p>
+<div style="page-break-after: always;"></div>
+<h1 id="%F0%9F%8C%90-05-the-product-ecosystem">🌐 05: The Product Ecosystem</h1>
+<h3 id="%F0%9F%8F%A2-1-brand-console">🏢 1. Brand Console</h3>
+<p><em>Manufacturing Control:</em> Mint new DPPs at scale and track supply chain analytics in real-time.</p>
+<h3 id="%F0%9F%8F%AA-2-merchant-interface">🏪 2. Merchant Interface</h3>
+<p><em>Activation &amp; Verification:</em> Instantly verify authenticity using any mobile device—no special hardware required.</p>
+<h3 id="%F0%9F%93%B1-3-customer-passport-portal">📱 3. Customer Passport Portal</h3>
+<p><em>Engagement:</em> Access origin stories, claim ownership, and interact with Circular Rewards (Pfand).</p>
+<h3 id="%F0%9F%9B%A1%EF%B8%8F-4-compliance--authority-gateway">🛡️ 4. Compliance &amp; Authority Gateway</h3>
+<p><em>JSON-LD Export:</em> Standards-compliant data output for seamless integration with EU surveillance systems and Customs (Zoll).</p>
+<hr>
+<h3 id="%C3%B6kosystem-schnittstellen-de"><strong>Ökosystem-Schnittstellen (DE)</strong></h3>
+<p>V-Ledger verbindet alle Stakeholder: Vom Marken-Dashboard über das Händler-Portal bis zum Kunden-Passport. Die JSON-LD Schnittstelle sorgt dabei für volle Kompatibilität mit Behörden und dem EU-Zoll.</p>
+<div style="page-break-after: always;"></div>
+<h1 id="%E2%99%BB%EF%B8%8F-06-economy--incentives">♻️ 06: Economy &amp; Incentives</h1>
+<h2 id="dual-incentive-infrastructure">Dual-Incentive Infrastructure</h2>
+<h3 id="%F0%9F%93%88-1-the-pfand-deposit-system">📈 1. The Pfand (Deposit) System</h3>
+<p align="center">
+  <img src="https://mermaid.ink/img/eyJjb2RlIjogImdyYXBoIFREXG4gICAgTVtCcmFuZC9NaW50XSAtLSBsb2NrcyB4IEVVUkMgLS0+IFNDW1NtYXJ0IENvbnRyYWN0XVxuICAgIFNDIC0tIGFzc29jaWF0ZXMgZGVwb3NpdCAtLT4gUFtQcm9kdWN0IFBhc3Nwb3J0XVxuICAgIENbQ3VzdG9tZXJdIC0tIHNjYW5zIHJldHVybmVkIGl0ZW0gLS0+IFJbUmVjeWNsZXIvSHViXVxuICAgIFIgLS0gdmVyaWZpZXMgYXV0aGVudGljIHRhZyAtLT4gU0NcbiAgICBTQyAtLSByZWxlYXNlcyB4IEVVUkMgLS0+IEMiLCAibWVybWFpZCI6IHsidGhlbWUiOiAiZGVmYXVsdCJ9LCAidXBkYXRlRWRpdG9yIjogZmFsc2UsICJhdXRvU3luYyI6IHRydWUsICJ1cGRhdGVEaWFncmFtIjogdHJ1ZX0=" alt="Mermaid Diagram" width="70%">
+</p>
+<h3 id="%F0%9F%92%8E-2-secondary-market-royalties">💎 2. Secondary Market Royalties</h3>
+<p>V-Ledger allows brands to capture a percentage of every resale. When ownership is transferred, the smart contract automatically routes a <strong>Royalty Fee</strong> back to the brand.</p>
+<p align="center">
+  <img src="https://mermaid.ink/img/eyJjb2RlIjogImdyYXBoIExSXG4gICAgU1tTZWxsZXJdIC0tIHRyYW5zZmVycyBwYXNzcG9ydCAtLT4gQltCdXllcl1cbiAgICBCIC0tIHBheXMgcHJpY2UgLS0+IFBbUGF5bWVudCBQb3J0YWxdXG4gICAgUCAtLSA5NSUgLS0+IFNcbiAgICBQIC0tIDUlIFJveWFsdHkgLS0+IEJSW09yaWdpbmFsIEJyYW5kXSIsICJtZXJtYWlkIjogeyJ0aGVtZSI6ICJkZWZhdWx0In0sICJ1cGRhdGVFZGl0b3IiOiBmYWxzZSwgImF1dG9TeW5jIjogdHJ1ZSwgInVwZGF0ZURpYWdyYW0iOiB0cnVlfQ==" alt="Mermaid Diagram" width="80%">
+</p>
+<hr>
+<h3 id="wirtschaftliche-anreize-de"><strong>Wirtschaftliche Anreize (DE)</strong></h3>
+<p><strong>Pfandsystem:</strong> Sicherstellung der Materialrückführung durch On-Chain hinterlegte Deposits.<br>
+<strong>Royalties:</strong> Automatische Umsatzbeteiligung der Marke bei jedem Wiederverkauf (z. B. Luxusuhren), was dauerhafte Einnahmen über den gesamten Lebenszyklus generiert.</p>
+<div style="page-break-after: always;"></div>
+<h1 id="%F0%9F%92%B0-07-business-model">💰 07: Business Model</h1>
+<h3 id="%F0%9F%92%B3-subscription-tiers">💳 Subscription Tiers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Tier</th>
+<th style="text-align:left">Target</th>
+<th style="text-align:left">Key Features</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Essential</strong></td>
+<td style="text-align:left">Startups</td>
+<td style="text-align:left">Compliance, Basic Analytics</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Pro</strong></td>
+<td style="text-align:left">SMBs</td>
+<td style="text-align:left">Custom UI, Role Management</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Enterprise</strong></td>
+<td style="text-align:left">Fortune 500</td>
+<td style="text-align:left">API Access, Private IPFS, SLA</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%F0%9F%93%88-revenue-components">📈 Revenue Components</h3>
+<ol>
+<li><strong>SaaS Subscription:</strong> Fixed monthly platform access fee.</li>
+<li><strong>Minting Fee:</strong> One-time usage fee per Passport created.</li>
+<li><strong>Royalty Commission:</strong> Percentage-based fee on secondary market transactions.</li>
+<li><strong>Transaction Fee:</strong> Small percentage on circular economy (Pfand) payouts.</li>
+</ol>
+<hr>
+<h3 id="gesch%C3%A4ftsmodell-de"><strong>Geschäftsmodell (DE)</strong></h3>
+<p>Skalierbare Erlösströme durch monatliche Abonnements und nutzungsbasierte Gebühren (Minting &amp; Transaktionen). Jede Pfandrückzahlung und jeder Wiederverkauf steigert den Lifetime Value des Produkts.</p>
+<div style="page-break-after: always;"></div>
+<h1 id="%F0%9F%93%8A-08-competition--market">📊 08: Competition &amp; Market</h1>
+<table>
+<tr>
+<td width="60%" valign="top">
+<h2 id="the-market-demand">The Market Demand</h2>
+<p>The DPP market is projected to reach billions in value as the <strong>EU ESPR regulation</strong> affects over 30 product categories by 2026.</p>
+<h3 id="%F0%9F%93%88-market-drivers">📈 Market Drivers</h3>
+<ul>
+<li><strong>Regulatory Deadline:</strong> 2026/2027 mandates forced adoption.</li>
+<li><strong>Consumer Shift:</strong> 70%+ prioritize verifiable sustainability.</li>
+<li><strong>Brand Protection:</strong> Global counterfeit growth.</li>
+</ul>
+</td>
+<td width="40%" valign="top">
+<p><img src="eu-asia.png" alt="Global Market Connectivity"></p>
+</td>
+</tr>
+</table>
+<h3 id="%E2%9A%94%EF%B8%8F-competitive-positioning">⚔️ Competitive Positioning</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Feature</th>
+<th style="text-align:left">QR / Basic NFC</th>
+<th style="text-align:left">Legacy Traceability</th>
+<th style="text-align:left"><strong>V-Ledger</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Security</strong></td>
+<td style="text-align:left">🔴 Low</td>
+<td style="text-align:left">🟡 Medium</td>
+<td style="text-align:left">🟢 <strong>High (SUN)</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Trust</strong></td>
+<td style="text-align:left">🔴 Low</td>
+<td style="text-align:left">🟡 Medium</td>
+<td style="text-align:left">🟢 <strong>High (Web3)</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>User Exp.</strong></td>
+<td style="text-align:left">🟢 High</td>
+<td style="text-align:left">🔴 Low</td>
+<td style="text-align:left">🟢 <strong>High (Invisible)</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="marktanalyse-de"><strong>Marktanalyse (DE)</strong></h3>
+<p>Der EU-ESPR-Standard erzwingt die Einführung digitaler Pässe. V-Ledger hebt sich durch echte Hardware-Sicherheit und die &quot;Invisible Web3&quot;-Erfahrung von herkömmlichen QR-Godes ab.</p>
+<div style="page-break-after: always;"></div>
+<h1 id="%F0%9F%9A%80-09-roadmap--journey">🚀 09: Roadmap &amp; Journey</h1>
+<p align="center">
+  <img src="https://mermaid.ink/img/eyJjb2RlIjogInRpbWVsaW5lXG4gICAgdGl0bGUgVi1MZWRnZXI6IERldmVsb3BtZW50IEV2b2x1dGlvblxuICAgIERlYyAyMDI0IDogVGhlIFZpc2lvbiA6IERpZ2l0YWwgUHJvZHVjdCBQYXNzcG9ydCBjb25jZXB0IHN0YXJ0ZWQuXG4gICAgSmFuIC0gSnVuZSAyMDI1IDogVGVjaG5pY2FsIEZvdW5kYXRpb24gOiBCdWlsdCBlbnRlcnByaXNlIFZQTiBpbmZyYXN0cnVjdHVyZS5cbiAgICBRNCAyMDI1IDogVi1MZWRnZXIgQWxwaGEgOiBGaXJzdCBjb2RlYmFzZSBzdGFydGVkLlxuICAgIEFwcmlsIDIwMjYgOiBIYXJkd2FyZSBCcmVha3Rocm91Z2ggOiBTZWN1cmUgTkZDIGZpbmFsaXplZCAoTlRBRyA0MjQgRE5BKS5cbiAgICAyMDI2IC0gMjAyNyA6IFNjYWxlICYgQ29tcGxpYW5jZSA6IEZ1bGwgRVUgRVNQUiBzdGFuZGFyZCByZWFkaW5lc3MuIiwgIm1lcm1haWQiOiB7InRoZW1lIjogImRlZmF1bHQifSwgInVwZGF0ZUVkaXRvciI6IGZhbHNlLCAiYXV0b1N5bmMiOiB0cnVlLCAidXBkYXRlRGlhZ3JhbSI6IHRydWV9" alt="Mermaid Diagram" width="100%">
+</p>
+<h3 id="%F0%9F%8E%AF-key-breakthroughs">🎯 Key Breakthroughs</h3>
+<ul>
+<li><strong>The &quot;Missing Link&quot;:</strong> V-Ledger software was ready by late 2025, but hardware encryption (NTAG 424 DNA) was the final hurdle.</li>
+<li><strong>Hardware Mastery (April 2026):</strong> Implemented CMAC/SDM/SUN encryption via Kotlin and the ocpp-toolbox.</li>
+</ul>
+<hr>
+<h3 id="werdegang--roadmap-de"><strong>Werdegang &amp; Roadmap (DE)</strong></h3>
+<p>Vom Konzept 2024 über das technische Fundament 2025 bis zum Hardware-Durchbruch im April 2026: V-Ledger ist nun bereit für die EU-Regulierung 2026/2027 und bietet die notwendige Sicherheit auf Hardware-Ebene.</p>
+<hr>
+<p align="center">
+Created by Arndt Christoph Handschuh | v-ledger.com
+</p>
+
+</body>
+</html>

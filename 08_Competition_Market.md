@@ -26,10 +26,10 @@ The Digital Product Passport (DPP) market is projected to reach billions in valu
 
 | Feature | QR / Basic NFC | Legacy Traceability | **V-Ledger** |
 | :--- | :--- | :--- | :--- |
-| **Security** | 🔴 Low (Clonable) | 🟡 Medium (Centralized) | 🟢 **High (SUN Token)** |
-| **Trust** | 🔴 Low (Easy to fake) | 🟡 Medium (Siloed) | 🟢 **High (Blockchain)** |
-| **User Exp.** | 🟢 High | 🔴 Low (Complex) | 🟢 **High (Invisible Web3)** |
-| **Interoperability** | 🔴 Low | 🔴 Low (Vendor Lock-in) | 🟢 **High (Open Standard)** |
+| **Security** | <span style="color:#ff4b2b">●</span> Low (Clonable) | <span style="color:#ffa500">●</span> Medium (Centralized) | <span style="color:#00c853">●</span> **High (SUN Token)** |
+| **Trust** | <span style="color:#ff4b2b">●</span> Low (Easy to fake) | <span style="color:#ffa500">●</span> Medium (Siloed) | <span style="color:#00c853">●</span> **High (Blockchain)** |
+| **User Exp.** | <span style="color:#00c853">●</span> High | <span style="color:#ff4b2b">●</span> Low (Complex) | <span style="color:#00c853">●</span> **High (Invisible Web3)** |
+| **Interoperability** | <span style="color:#ff4b2b">●</span> Low | <span style="color:#ff4b2b">●</span> Low (Vendor Lock-in) | <span style="color:#00c853">●</span> **High (Open Standard)** |
 
 ---
 

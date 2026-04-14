@@ -235,9 +235,9 @@ The DPP market is projected to reach billions in value as the **EU ESPR regulati
 
 | Feature | QR / Basic NFC | Legacy Traceability | **V-Ledger** |
 | :--- | :--- | :--- | :--- |
-| **Security** | 🔴 Low | 🟡 Medium | 🟢 **High (SUN)** |
-| **Trust** | 🔴 Low | 🟡 Medium | 🟢 **High (Web3)** |
-| **User Exp.** | 🟢 High | 🔴 Low | 🟢 **High (Invisible)** |
+| **Security** | <span style="color:#ff4b2b">●</span> Low | <span style="color:#ffa500">●</span> Medium | <span style="color:#00c853">●</span> **High (SUN)** |
+| **Trust** | <span style="color:#ff4b2b">●</span> Low | <span style="color:#ffa500">●</span> Medium | <span style="color:#00c853">●</span> **High (Web3)** |
+| **User Exp.** | <span style="color:#00c853">●</span> High | <span style="color:#ff4b2b">●</span> Low | <span style="color:#00c853">●</span> **High (Invisible)** |
 
 ---
 
