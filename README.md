@@ -11,11 +11,17 @@
 
 ---
 
-![V-Ledger Hero](vledger_hero_1776131213330.png)
-
-## Overview
-
-V-Ledger is an enterprise-grade ecosystem designed to bridge the gap between physical products and digital transparency. By combining high-security NFC hardware with decentralized ledger technology, V-Ledger enables brands to comply with upcoming EU regulations (ESPR) while enhancing product authenticity and circular economy participation.
+<table>
+  <tr>
+    <td width="60%" valign="top">
+      <h2>Overview</h2>
+      <p>V-Ledger is an enterprise-grade ecosystem designed to bridge the gap between physical products and digital transparency. By combining high-security NFC hardware with decentralized ledger technology, V-Ledger enables brands to comply with upcoming EU regulations (ESPR) while enhancing product authenticity and circular economy participation.</p>
+    </td>
+    <td width="40%" valign="top">
+      <img src="vledger_hero_1776131213330.png" alt="V-Ledger Hero" width="100%">
+    </td>
+  </tr>
+</table>
 
 ### 🗺️ Pitch Deck Navigation
 
