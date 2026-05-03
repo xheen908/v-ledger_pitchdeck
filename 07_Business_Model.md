@@ -19,6 +19,14 @@ V-Ledger combines SaaS recurring revenue with usage-based growth, aligning our s
 3. **Royalty Commission:** Percentage-based fee on all secondary market transactions.
 4. **Transaction Fee:** Small percentage on circular economy (Pfand) payouts.
 
+### 🚀 B2B Go-to-Market & Sales Strategy
+
+V-Ledger captures market share via a focused inbound, outbound, and partner-channel strategy:
+- **Inbound Funnel:** Educate luxury and manufacturing companies on EU ESPR compliance. Leads are converted via standard **Strategic Audits** to evaluate their exact production lines.
+- **Outbound Approach:** Target high-end fashion and limited-edition product houses with outbound enterprise sales teams directly offering custom integration SLAs.
+- **Partner Channel Strategy:** Bundle the V-Ledger SaaS platform with hardware makers (NXP/NFC suppliers) and supply chain ERP providers (e.g., SAP, Oracle) for direct provisioning at the point of origin.
+- **Pilot Customers:** Initial rollout includes 3 active pilot programs across luxury watches and certified recyclers to validate on-chain ROI and secondary market royalty models.
+
 ---
 
 <details>

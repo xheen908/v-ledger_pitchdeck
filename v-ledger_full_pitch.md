@@ -24,10 +24,16 @@
 ### 1. Regulatory Pressure (EU ESPR)
 Upcoming **EU Ecodesign for Sustainable Products Regulation (ESPR)** mandates a Digital Product Passport for most physical goods by **2026/2027**. Non-compliance risks heavy fines and market access restrictions.
 
-### 2. The Counterfeit Epidemic
+### 🌐 2. The Strategic Pivot: Asian Exporters
+
+While early efforts targeted domestic EU industrial clients, the market's true bottleneck lies with **Asian exporters** (manufacturing hubs in Vietnam, Thailand, Japan, South Korea) producing high-volume textiles, batteries, and electronics for the EU market. V-Ledger addresses this pivot upfront:
+- **Localized Presence:** Providing specialized VN/TH/JP/KR native platform interfaces.
+- **Export Readiness:** Allowing Asian manufacturers to easily generate EU-compliant DPPs at the manufacturing origin before export.
+
+### 🛡️ 3. The Counterfeit Epidemic
 Global trade in counterfeits costs brands billions annually. Traditional QR codes or basic NFC tags are easily cloned, leading to trust erosion and safety risks.
 
-### 3. Fragmented Lifecycle Data
+### ♻️ 4. Fragmented Lifecycle Data
 Once a product is sold, brands lose visibility. Recycling rates remain low because there is no standardized way to verify material composition or incentivize returns.
 
 ---
@@ -205,6 +211,14 @@ graph LR
 2. **Minting Fee:** One-time usage fee per Passport created.
 3. **Royalty Commission:** Percentage-based fee on secondary market transactions.
 4. **Transaction Fee:** Small percentage on circular economy (Pfand) payouts.
+
+### 🚀 B2B Go-to-Market & Sales Strategy
+
+V-Ledger captures market share via a focused inbound, outbound, and partner-channel strategy:
+- **Inbound Funnel:** Educate luxury and manufacturing companies on EU ESPR compliance. Leads are converted via standard **Strategic Audits** to evaluate their exact production lines.
+- **Outbound Approach:** Target high-end fashion and limited-edition product houses with outbound enterprise sales teams directly offering custom integration SLAs.
+- **Partner Channel Strategy:** Bundle the V-Ledger SaaS platform with hardware makers (NXP/NFC suppliers) and supply chain ERP providers (e.g., SAP, Oracle) for direct provisioning at the point of origin.
+- **Pilot Customers:** Initial rollout includes 3 active pilot programs across luxury watches and certified recyclers to validate on-chain ROI and secondary market royalty models.
 
 ---
 

@@ -7,13 +7,19 @@ Global brands face increasing pressure from regulators, consumers, and environme
 > [!WARNING]
 > Traditional methods of product tracking are no longer sufficient to meet modern security and regulatory standards.
 
-### 1. Regulatory Pressure (EU ESPR)
-Upcoming **EU Ecodesign for Sustainable Products Regulation (ESPR)** mandates a Digital Product Passport for most physical goods by **2026/2027**. Non-compliance risks heavy fines and market access restrictions.
+### 1. Regulatory Pressure (EU ESPR & Battery Passports)
+Upcoming **EU Ecodesign for Sustainable Products Regulation (ESPR)** mandates a Digital Product Passport for most physical goods by **2026/2027**. Non-compliance risks heavy fines and complete market access restrictions for any goods imported into the EU.
 
-### 2. The Counterfeit Epidemic
+### 🌐 2. The Strategic Pivot: Asian Exporters
+
+While early efforts targeted domestic EU industrial clients, the market's true bottleneck lies with **Asian exporters** (manufacturing hubs in Vietnam, Thailand, Japan, South Korea) producing high-volume textiles, batteries, and electronics for the EU market. V-Ledger addresses this pivot upfront:
+- **Localized Presence:** Providing specialized VN/TH/JP/KR native platform interfaces.
+- **Export Readiness:** Allowing Asian manufacturers to easily generate EU-compliant DPPs at the manufacturing origin before export.
+
+### 🛡️ 3. The Counterfeit Epidemic
 Global trade in counterfeits costs brands billions annually. Traditional QR codes or basic NFC tags are easily cloned, leading to trust erosion and safety risks.
 
-### 3. Fragmented Lifecycle Data
+### ♻️ 4. Fragmented Lifecycle Data
 Once a product is sold, brands lose visibility. Recycling rates remain low because there is no standardized way to verify material composition or incentivize returns.
 
 ---

@@ -35,6 +35,13 @@ graph LR
 - **Controlled Resale:** Ensure that high-value assets are only traded through verified channels.
 - **Customer Insights:** Maintain a connection with the product owner across multiple life stages.
 
+### 💰 Tokenomics & Instant Payout Architecture
+
+To eliminate volatility and speculative risks ("Buzzword-Risk"), the V-Ledger platform operates exclusively using fully collateralized stablecoins rather than undefined internal tokens:
+- **No Volatile Tokens:** Deposits and rewards are backed 1:1 by highly liquid, regulated stablecoins (**EURC / USDC**).
+- **On-Chain Escrows:** At the time of a Digital Twin provisioning, the brand locks the required EURC deposit in a Smart Contract Escrow.
+- **Instant Recycler Payouts:** Certified recycling facilities scan the secure NTAG 424 DNA tag. The smart contract validates the cryptographic SUN proof instantly and releases the escrowed stablecoins directly to the recycler's or consumer's digital wallet in the same transaction.
+
 ---
 
 <details>
