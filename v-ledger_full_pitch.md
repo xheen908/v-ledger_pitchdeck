@@ -172,9 +172,14 @@ V-Ledger verbindet alle Stakeholder: Vom Marken-Dashboard über das Händler-Por
 ### 💎 2. Secondary Market Royalties
 V-Ledger allows brands to capture a percentage of every resale. When ownership is transferred, the smart contract automatically routes a **Royalty Fee** back to the brand.
 
-<p align="center">
-  <img src="https://mermaid.ink/img/eyJjb2RlIjogImdyYXBoIExSXG4gICAgU1tTZWxsZXJdIC0tIHRyYW5zZmVycyBwYXNzcG9ydCAtLT4gQltCdXllcl1cbiAgICBCIC0tIHBheXMgcHJpY2UgLS0+IFBbUGF5bWVudCBQb3J0YWxdXG4gICAgUCAtLSA5NSUgLS0+IFNcbiAgICBQIC0tIDUlIFJveWFsdHkgLS0+IEJSW09yaWdpbmFsIEJyYW5kXSIsICJtZXJtYWlkIjogeyJ0aGVtZSI6ICJkZWZhdWx0In0sICJ1cGRhdGVFZGl0b3IiOiBmYWxzZSwgImF1dG9TeW5jIjogdHJ1ZSwgInVwZGF0ZURpYWdyYW0iOiB0cnVlfQ==" alt="Mermaid Diagram" width="80%">
-</p>
+```mermaid
+graph LR
+    S[Seller] -- transfers passport --> B[Buyer]
+    B -- pays price --> P[Payment Portal]
+    P -- 94% --> S
+    P -- 5% Royalty --> BR[Original Brand]
+    P -- 1% Fee --> V[V-Ledger Platform]
+```
 
 ---
 

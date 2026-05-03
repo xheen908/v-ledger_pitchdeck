@@ -25,9 +25,9 @@ V-Ledger allows brands to capture a percentage of every resale. When ownership i
 graph LR
     S[Seller] -- transfers passport --> B[Buyer]
     B -- pays price --> P[Payment Portal]
-    P -- 95% --> S
+    P -- 94% --> S
     P -- 5% Royalty --> BR[Original Brand]
-    BR -- verifies authenticity --> B
+    P -- 1% Fee --> V[V-Ledger Platform]
 ```
 
 **Value for Brands:**
